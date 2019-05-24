@@ -40,10 +40,10 @@ namespace ProyectoFinalAplicada.UI.Registros
         void limpiar()
         {
 
-            NombrestextBox.Text = " ";
-            UsuariotextBox.Text = " ";
-            EmailtextBox.Text = " ";
-            ClavetextBox.Text = " ";
+            NombrestextBox.Text = string.Empty;
+            UsuariotextBox.Text = string.Empty;
+            EmailtextBox.Text = string.Empty;
+            ClavetextBox.Text = string.Empty;
             NivelUsuarioComboBox.SelectedIndex = 0;
         }
 

@@ -13,6 +13,7 @@ namespace ProyectoFinalAplicada.DAL
     {
 
         public DbSet<Usuarios> Usuarios { get; set; }
+        public DbSet<Cargos> Cargos { get; set; }
         //  public DbSet<Fibonacci> Fibonacci { get; set; }
         public Contexto() : base("ConStr")
         {

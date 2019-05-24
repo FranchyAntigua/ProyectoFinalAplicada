@@ -30,13 +30,13 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.IdnumericUpDown = new System.Windows.Forms.NumericUpDown();
+            this.DescripciontextBox = new System.Windows.Forms.TextBox();
             this.BuscarButton = new System.Windows.Forms.Button();
             this.NuevoButton = new System.Windows.Forms.Button();
             this.GuardarButton = new System.Windows.Forms.Button();
             this.EliminarButton = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.IdnumericUpDown)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -57,19 +57,19 @@
             this.label2.TabIndex = 1;
             this.label2.Text = "Descripcion";
             // 
-            // numericUpDown1
+            // IdnumericUpDown
             // 
-            this.numericUpDown1.Location = new System.Drawing.Point(83, 40);
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(66, 20);
-            this.numericUpDown1.TabIndex = 2;
+            this.IdnumericUpDown.Location = new System.Drawing.Point(83, 40);
+            this.IdnumericUpDown.Name = "IdnumericUpDown";
+            this.IdnumericUpDown.Size = new System.Drawing.Size(66, 20);
+            this.IdnumericUpDown.TabIndex = 2;
             // 
-            // textBox1
+            // DescripciontextBox
             // 
-            this.textBox1.Location = new System.Drawing.Point(102, 83);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(120, 20);
-            this.textBox1.TabIndex = 3;
+            this.DescripciontextBox.Location = new System.Drawing.Point(102, 83);
+            this.DescripciontextBox.Name = "DescripciontextBox";
+            this.DescripciontextBox.Size = new System.Drawing.Size(120, 20);
+            this.DescripciontextBox.TabIndex = 3;
             // 
             // BuscarButton
             // 
@@ -79,6 +79,7 @@
             this.BuscarButton.TabIndex = 4;
             this.BuscarButton.Text = "Buscar";
             this.BuscarButton.UseVisualStyleBackColor = true;
+            this.BuscarButton.Click += new System.EventHandler(this.BuscarButton_Click);
             // 
             // NuevoButton
             // 
@@ -97,6 +98,7 @@
             this.GuardarButton.TabIndex = 6;
             this.GuardarButton.Text = "Guardar";
             this.GuardarButton.UseVisualStyleBackColor = true;
+            this.GuardarButton.Click += new System.EventHandler(this.GuardarButton_Click);
             // 
             // EliminarButton
             // 
@@ -116,13 +118,13 @@
             this.Controls.Add(this.GuardarButton);
             this.Controls.Add(this.NuevoButton);
             this.Controls.Add(this.BuscarButton);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.numericUpDown1);
+            this.Controls.Add(this.DescripciontextBox);
+            this.Controls.Add(this.IdnumericUpDown);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "rCargo";
             this.Text = "rCargo";
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.IdnumericUpDown)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -132,8 +134,8 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.NumericUpDown numericUpDown1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.NumericUpDown IdnumericUpDown;
+        private System.Windows.Forms.TextBox DescripciontextBox;
         private System.Windows.Forms.Button BuscarButton;
         private System.Windows.Forms.Button NuevoButton;
         private System.Windows.Forms.Button GuardarButton;

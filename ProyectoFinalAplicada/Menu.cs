@@ -33,5 +33,10 @@ namespace ProyectoFinalAplicada
         {
             new cUSuarios().ShowDialog();
         }
+
+        private void CargosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            new rCargo().ShowDialog();
+        }
     }
 }
