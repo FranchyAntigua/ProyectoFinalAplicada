@@ -13,35 +13,34 @@ using System.Windows.Forms;
 
 namespace ProyectoFinalAplicada.UI.Consualtas
 {
-    public partial class cUSuarios : Form
+    public partial class cCargos : Form
     {
-        public cUSuarios()
+        public cCargos()
         {
             InitializeComponent();
         }
-
         private void buttonBuscar_Click(object sender, EventArgs e)
         {
-            Expression<Func<Usuarios, bool>> filtro = a => true;
+            Expression<Func<Cargos, bool>> filtro = a => true;
             int id;
             switch (FiltroComboBox.SelectedIndex)
             {
                 case 0://Filtrando por ID 
                     id = Convert.ToInt32(CriterioTextBox.Text);
-                    filtro = a => a.UsuarioId == id;
+                    filtro = a => a.CargoId == id;
                     break;
-                
+
             }
 
-            UsuariosConsultaDataGridView.DataSource = UsuariosBLL.GetList(filtro);
+            CargosConsultaDataGridView.DataSource = CargoBLL.GetList(filtro);
         }
 
-        private void FiltroComboBox_SelectedIndexChanged(object sender, EventArgs e)
+        private void CCargos_Load(object sender, EventArgs e)
         {
 
         }
 
-        private void CUSuarios_Load(object sender, EventArgs e)
+        private void CargosConsultaDataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
         }

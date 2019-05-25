@@ -33,7 +33,7 @@ namespace ProyectoFinalAplicada.BLL
 
         public static bool Editar(Cargos cargos)
         {
-            bool paso = false;
+            bool estado = false;
 
             Contexto contexto = new Contexto();
             try
@@ -41,7 +41,7 @@ namespace ProyectoFinalAplicada.BLL
                 contexto.Entry(cargos).State = EntityState.Modified;
                 if (contexto.SaveChanges() > 0)
                 {
-                    paso = true;
+                    estado = true;
                 }
                 contexto.Dispose();
             }
@@ -49,12 +49,12 @@ namespace ProyectoFinalAplicada.BLL
             {
                 throw;
             }
-            return paso;
+            return estado;
         }
 
         public static bool Eliminar(int id)
         {
-            bool paso = false;
+            bool estado = false;
 
             Contexto contexto = new Contexto();
             try
@@ -65,7 +65,7 @@ namespace ProyectoFinalAplicada.BLL
 
                 if (contexto.SaveChanges() > 0)
                 {
-                    paso = true;
+                    estado = true;
                 }
                 contexto.Dispose();
             }
@@ -74,7 +74,7 @@ namespace ProyectoFinalAplicada.BLL
 
                 throw;
             }
-            return paso;
+            return estado;
         }
         public static Cargos Buscar(int id)
         {

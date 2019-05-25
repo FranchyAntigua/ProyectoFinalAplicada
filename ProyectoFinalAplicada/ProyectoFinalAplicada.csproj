@@ -64,6 +64,12 @@
     <Compile Include="Menu.Designer.cs">
       <DependentUpon>Menu.cs</DependentUpon>
     </Compile>
+    <Compile Include="UI\Consualtas\cCargos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Consualtas\cCargos.Designer.cs">
+      <DependentUpon>cCargos.cs</DependentUpon>
+    </Compile>
     <Compile Include="UI\Consualtas\cUSuarios.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -97,6 +103,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="UI\Consualtas\cCargos.resx">
+      <DependentUpon>cCargos.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UI\Consualtas\cUSuarios.resx">
       <DependentUpon>cUSuarios.cs</DependentUpon>
     </EmbeddedResource>

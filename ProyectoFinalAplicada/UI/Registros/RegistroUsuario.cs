@@ -1,4 +1,5 @@
 ﻿using ProyectoFinalAplicada.BLL;
+using ProyectoFinalAplicada.DAL;
 using ProyectoFinalAplicada.Entidades;
 using System;
 using System.Collections.Generic;
@@ -17,6 +18,15 @@ namespace ProyectoFinalAplicada.UI.Registros
         public RegistroUsuario()
         {
             InitializeComponent();
+            LlenarComboBox();
+        }
+        private void LlenarComboBox()
+        {
+            BLL.CargoBLL ArtRepositorio = new BLL.CargoBLL();
+
+            CargocomboBox.DataSource = CargoBLL.GetList(c => true);
+            CargocomboBox.ValueMember = "CargoId";
+            CargocomboBox.DisplayMember = "Descripcion";
         }
         private void ButtonBuscar_Click(object sender, EventArgs e)
         {
@@ -61,6 +71,7 @@ namespace ProyectoFinalAplicada.UI.Registros
             else
                 nivelusu = 2;
 
+
             usuarios.NivelUsuario = nivelusu;
             usuarios.Usuario = UsuariotextBox.Text;
             usuarios.Clave = ClavetextBox.Text;
@@ -82,7 +93,10 @@ namespace ProyectoFinalAplicada.UI.Registros
                 if (usuarios == null)
                 {
                     if (UsuariosBLL.Guardar(LlenaClase()))
+                    {
                         MessageBox.Show("Guardado Con Exito");
+                        limpiar();
+                    }
                     else
                         MessageBox.Show("El Usuario No Se Guardo");
                 }
@@ -90,13 +104,15 @@ namespace ProyectoFinalAplicada.UI.Registros
                 {
                     if (UsuariosBLL.Editar(LlenaClase()))
                         MessageBox.Show("Modificado Con Exito");
+                
                     else
                         MessageBox.Show("El Usuario No Se Modifico");
+                    limpiar();
                 }
             }
             else
             {
-                MessageBox.Show("fALTAN dATOS");
+                MessageBox.Show("Faltan Datos");
             }
         }
         //else
@@ -140,8 +156,10 @@ namespace ProyectoFinalAplicada.UI.Registros
 
             if (BLL.UsuariosBLL.Eliminar(id))
                 MessageBox.Show("Eliminado!!", "Exito", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                
             else
                 MessageBox.Show("No se pudo eliminar!!", "Fallo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            limpiar();
         }
 
         private void Nuevobutton_Click(object sender, EventArgs e)

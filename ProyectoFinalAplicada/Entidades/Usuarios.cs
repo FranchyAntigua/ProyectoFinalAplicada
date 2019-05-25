@@ -11,10 +11,12 @@ namespace ProyectoFinalAplicada.Entidades
     {
         [Key]
         public int UsuarioId { get; set; }
+        public int CargoId  { get; set; }
         public string Nombres { get; set; }
        
         public string Email { get; set; }
         public int NivelUsuario { get; set; }
+        
         public string Usuario { get; set; }
         public string Clave { get; set; }
         public DateTime FechaIngreso { get; set; }
@@ -22,6 +24,7 @@ namespace ProyectoFinalAplicada.Entidades
         public Usuarios()
         {
             this.UsuarioId = 0;
+            this.CargoId = 0;
             this.Nombres = string.Empty;
             this.Email = string.Empty;
             this.NivelUsuario = 0;

@@ -55,6 +55,7 @@ namespace ProyectoFinalAplicada.UI.Registros
                         MessageBox.Show("Guardado Con Exito");
                     else
                         MessageBox.Show("El Cagos No Se Guardo");
+                    limpiar();
                 }
                 else
                 {
@@ -66,7 +67,7 @@ namespace ProyectoFinalAplicada.UI.Registros
             }
             else
             {
-                MessageBox.Show("fALTAN dATOS");
+                MessageBox.Show("Faltan Datos");
             }
         }
 
@@ -86,7 +87,35 @@ namespace ProyectoFinalAplicada.UI.Registros
                 MessageBox.Show("No se encontro!", "Fallo",
                     MessageBoxButtons.OK, MessageBoxIcon.Error);
         }
+        void limpiar()
+        {
+
+            DescripciontextBox.Text = string.Empty;
+        }
+
+        private void Eliminarbutton_Click(object sender, EventArgs e)
+        {
+
+            int id = Convert.ToInt32(IdnumericUpDown.Value);
+
+
+            if (BLL.CargoBLL.Eliminar(id))
+                MessageBox.Show("Eliminado!!", "Exito", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            else
+                MessageBox.Show("No se pudo eliminar!!", "Fallo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+        }
+
+        private void Nuevobutton_Click(object sender, EventArgs e)
+        {
+            limpiar();
+        }
+
+        private void RCargo_Load(object sender, EventArgs e)
+        {
+
+        }
     }
+
     }
 
 
