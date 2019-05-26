@@ -40,7 +40,7 @@
             // UsuariosConsultaDataGridView
             // 
             this.UsuariosConsultaDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.UsuariosConsultaDataGridView.Location = new System.Drawing.Point(15, 48);
+            this.UsuariosConsultaDataGridView.Location = new System.Drawing.Point(12, 35);
             this.UsuariosConsultaDataGridView.Name = "UsuariosConsultaDataGridView";
             this.UsuariosConsultaDataGridView.Size = new System.Drawing.Size(414, 209);
             this.UsuariosConsultaDataGridView.TabIndex = 22;
@@ -49,7 +49,7 @@
             // 
             this.buttonBuscar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.buttonBuscar.Image = global::ProyectoFinalAplicada.Properties.Resources.Search_32;
-            this.buttonBuscar.Location = new System.Drawing.Point(435, 48);
+            this.buttonBuscar.Location = new System.Drawing.Point(432, 48);
             this.buttonBuscar.Name = "buttonBuscar";
             this.buttonBuscar.Size = new System.Drawing.Size(88, 43);
             this.buttonBuscar.TabIndex = 21;
@@ -96,7 +96,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(535, 282);
+            this.ClientSize = new System.Drawing.Size(524, 253);
             this.Controls.Add(this.UsuariosConsultaDataGridView);
             this.Controls.Add(this.buttonBuscar);
             this.Controls.Add(this.CriterioTextBox);

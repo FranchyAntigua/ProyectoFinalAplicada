@@ -22,7 +22,7 @@ namespace ProyectoFinalAplicada.UI.Registros
         }
         private void LlenarComboBox()
         {
-            BLL.CargoBLL ArtRepositorio = new BLL.CargoBLL();
+            BLL.CargoBLL Usuario = new BLL.CargoBLL();
 
             CargocomboBox.DataSource = CargoBLL.GetList(c => true);
             CargocomboBox.ValueMember = "CargoId";
