@@ -45,5 +45,10 @@ namespace ProyectoFinalAplicada.UI.Consualtas
         {
 
         }
+
+        private void UsuariosConsultaDataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

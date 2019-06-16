@@ -44,6 +44,7 @@
             this.UsuariosConsultaDataGridView.Name = "UsuariosConsultaDataGridView";
             this.UsuariosConsultaDataGridView.Size = new System.Drawing.Size(414, 209);
             this.UsuariosConsultaDataGridView.TabIndex = 22;
+            this.UsuariosConsultaDataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.UsuariosConsultaDataGridView_CellContentClick);
             // 
             // buttonBuscar
             // 

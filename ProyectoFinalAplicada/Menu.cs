@@ -44,5 +44,21 @@ namespace ProyectoFinalAplicada
             new cCargos().ShowDialog();
 
         }
+
+        private void ProductosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            new rProductos().ShowDialog();
+
+        }
+
+        private void ClientesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            new rClientes().ShowDialog();
+        }
+
+        private void EntradaProductosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            new rEntradaProductos().ShowDialog();
+        }
     }
 }

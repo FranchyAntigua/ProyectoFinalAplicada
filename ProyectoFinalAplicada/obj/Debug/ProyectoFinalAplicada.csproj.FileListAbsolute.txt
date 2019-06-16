@@ -17,3 +17,6 @@ C:\Users\user\source\repos\ProyectoFinalAplicada\ProyectoFinalAplicada\obj\Debug
 C:\Users\user\source\repos\ProyectoFinalAplicada\ProyectoFinalAplicada\obj\Debug\ProyectoFinalAplicada.UI.Registros.RegistroUsuario.resources
 C:\Users\user\source\repos\ProyectoFinalAplicada\ProyectoFinalAplicada\obj\Debug\ProyectoFinalAplicada.UI.Consualtas.cUSuarios.resources
 C:\Users\user\source\repos\ProyectoFinalAplicada\ProyectoFinalAplicada\obj\Debug\ProyectoFinalAplicada.UI.Consualtas.cCargos.resources
+C:\Users\user\source\repos\ProyectoFinalAplicada\ProyectoFinalAplicada\obj\Debug\ProyectoFinalAplicada.UI.Registros.rClientes.resources
+C:\Users\user\source\repos\ProyectoFinalAplicada\ProyectoFinalAplicada\obj\Debug\ProyectoFinalAplicada.UI.Registros.rProductos.resources
+C:\Users\user\source\repos\ProyectoFinalAplicada\ProyectoFinalAplicada\obj\Debug\ProyectoFinalAplicada.UI.Registros.rEntradaProductos.resources
